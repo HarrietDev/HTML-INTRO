@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+}
+h1{
+    text-align: center;
+    color: blue;
+}
+.image-container {
+    align-items: center;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+.image {
+    position: absolute;
+    width: 100vw;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    border: 3px solid #333;
+    border-radius: 8px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+@keyframes fade1 {
+    0% { opacity: 1;}
+    50% {opacity: 0;}
+    100% { opacity: 1;}
+}
+@keyframes fade2 {
+    0% { opacity: 0;}
+    50% {opacity: 1;}
+    100% { opacity: 0;}
+}
+.one {
+    animation: fade1 4s infinite ;
+}
+
+.two {
+    animation: fade2 4s infinite ;
+}
+.navbar{
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: white;
+}
+.navbar a{
+    padding: 10px 15px;
+    color: darkblue;
+}
+table {
+    width: 100%; /* Ensures the table spans the container */
+    border-collapse: collapse; /* Removes double borders */
+}
+
+th, td {
+    border: 2px solid black; /* Adds a black border to all cells */
+    padding: 10px; /* Adds spacing inside cells */
+    text-align: center; /* Centers text in table cells */
+}
+
+th {
+    background-color: #f2f2f2; /* Light gray background for headers */
+}
+form {
+    display: flex;
+    flex-direction: column; /* Stacks elements vertically */
+    width: 50%; /* Adjusts form width */
+    margin: 0 auto; /* Centers form on the page */
+}
+
+input {
+    margin-bottom: 10px; /* Adds spacing between input fields */
+    padding: 8px; /* Increases input field padding */
+    border: 1px solid #ccc; /* Adds a subtle border */
+    border-radius: 5px; /* Rounds input field edges */
+}
+
+input[type="submit"] {
+    background-color: blue; /* Styles submit button */
+    color: white;
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+input[type="submit"]:hover {
+    background-color: darkblue;
+}
