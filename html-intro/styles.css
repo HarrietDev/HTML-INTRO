@@ -1,13 +1,19 @@
 
 body {
-     background-color: rgb(176, 206, 230)
+     background-color: rgb(176, 206, 230);
  }
-h1,h2{
+ .center-container{
     text-align: center;
+ }
+h1,h2,h3{
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
+    background-color: white;
     color: blue;
     padding: 10px;
     border-radius: 8px;
-    box-shadow: 5px 5px 10px rgba( 0, 0, 0, 0.3)
+    box-shadow: 5px 5px 10px rgba( 0, 0, 0, 0.3) 
 }
 .image-container {
     position: relative;
@@ -45,18 +51,17 @@ h1,h2{
     animation: fadeInOut 4s infinite ;
 }
 .navbar{
-display: flex;
+display:flex;
 justify-content: center;
 align-items: center;
 background-color: white;
 }
 .navbar a{
     padding: 10px 15px;
-    color: darkblue;
+    color: darkblue
 }
 table {
     border: 2px solid black;
-    margin: 20px auto;
     width: 80%; 
     box-shadow: 3px 3px 8px rgba( 0, 0, 0, 0.2);
     border-collapse: collapse;
