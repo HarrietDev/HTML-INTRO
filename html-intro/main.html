@@ -3,14 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <title>HTML Introduction</title>
-        <link rel="icon" href="favicon.ico">
-        <link rel="stylesheet" href="styles.css">
-    <!--todo: add an icon to the browser tab. -->
-    <style>
-        body {
-            background-color: powderblue;
-        }
-    </style>
+        <link rel="icon" href="favicon.ico" type="image/x-icon"><!-- Added favicon -->
+        <link rel="stylesheet" href="styles.css"> <!-- Linking external CSS -->
+    
     </head>
     <body>
         <h1>Welcome to HTML</h1>
@@ -91,9 +86,20 @@
         <form>
         <input type="email" placeholder="Type your email">
         <input type="tel" placeholder="Telephone Number">
+        <input type="number" placeholder="Age">
         <input type="text" placeholder="where did you learn about us">
-        <input type="radio"> 
+        <label for="agree">I agree to the terms and conditions</label>
+        <input type="radio"id="agree" name="agree" value="yes"> 
         <input type="submit" value="Sign Up">
+        
         </form>
+        <div class="custom-footer">
+            <p>This is a footer made with a <code><div></code>. It's just a box that holds content, but it doesn't tell anyone what the content is for.</p>
+        </div>
+
+        <!-- Footer using <footer> -->
+        <footer class="semantic-footer">
+            <p>This is a footer made with a <code><footer></code>. It tells everyone (browsers, search engines, screen readers) that this is the bottom part of the page or section.</p>
+        </footer>
     </body>
 </html>

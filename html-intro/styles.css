@@ -1,47 +1,53 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;  
+    box-sizing: border-box; 
+    text-align: center; 
 }
+body {
+     background-color: rgb(176, 206, 230)
+ }
 h1{
     text-align: center;
     color: blue;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 5px 5px 10px rgba( 0, 0, 0, 0.3)
 }
 .image-container {
+    position: relative;
     align-items: center;
     position: relative;
     width: 100vw;
     height: 100vh;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .image {
     position: absolute;
-    width: 100vw;
+    width: 80%;
     height: auto;
     display: block;
     object-fit: cover;
     opacity: 0;
     transition: opacity 1s ease-in-out;
-    border: 3px solid #333;
+    border: 3px solid black;
     border-radius: 8px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
 }
-@keyframes fade1 {
-    0% { opacity: 1;}
-    50% {opacity: 0;}
-    100% { opacity: 1;}
-}
-@keyframes fade2 {
-    0% { opacity: 0;}
-    50% {opacity: 1;}
-    100% { opacity: 0;}
+@keyframes fadeInOut {
+    0%,100% { opacity: 0;}
+    50% { opacity: 1;}
 }
 .one {
-    animation: fade1 4s infinite ;
+    animation: fadeInOut 4s infinite ;
+    animation-delay: 2s;
 }
 
 .two {
-    animation: fade2 4s infinite ;
+    animation: fadeInOut 4s infinite ;
 }
 .navbar{
 display: flex;
@@ -54,35 +60,41 @@ background-color: white;
     color: darkblue;
 }
 table {
-    width: 100%; /* Ensures the table spans the container */
-    border-collapse: collapse; /* Removes double borders */
+    border: 2px solid black;
+    margin: 20px auto;
+    width: 80%; 
+    box-shadow: 3px 3px 8px rgba( 0, 0, 0, 0.2);
+    border-collapse: collapse;
 }
 
 th, td {
-    border: 2px solid black; /* Adds a black border to all cells */
-    padding: 10px; /* Adds spacing inside cells */
-    text-align: center; /* Centers text in table cells */
+    border: 1px solid black; 
+    padding: 10px; 
+    text-align: center; 
 }
 
 th {
-    background-color: #f2f2f2; /* Light gray background for headers */
+    background-color: #f2f2f2;
+    font-weight: bold;
 }
+
 form {
     display: flex;
-    flex-direction: column; /* Stacks elements vertically */
-    width: 50%; /* Adjusts form width */
-    margin: 0 auto; /* Centers form on the page */
+    flex-direction: column; 
+    max-width: 400px; 
+    margin: 20px 
 }
 
 input {
-    margin-bottom: 10px; /* Adds spacing between input fields */
-    padding: 8px; /* Increases input field padding */
-    border: 1px solid #ccc; /* Adds a subtle border */
-    border-radius: 5px; /* Rounds input field edges */
+    margin-bottom: 10px 0; 
+    padding: 8px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    font-size: 16px;
 }
 
 input[type="submit"] {
-    background-color: blue; /* Styles submit button */
+    background-color: blue; 
     color: white;
     cursor: pointer;
     border: none;
@@ -93,3 +105,24 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background-color: darkblue;
 }
+form input[type="submit"]{
+    margin: 10px 0;
+}
+.custom-footer {
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #ccc;
+    margin-top: 20px;
+}
+
+.semantic-footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #555;
+    margin-top: 20px;
+}
+
