@@ -74,13 +74,13 @@ th, td {
 }
 
 th {
-    background-color: #f2f2f2;
-    font-weight: bold;
+    background-color: rgb(14, 149, 149)
 }
 
 form {
     display: flex;
     flex-direction: column; 
+    gap: 20px;
     max-width: 400px; 
     margin: 20px 
 }
