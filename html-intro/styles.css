@@ -113,7 +113,8 @@ form input[type="submit"]{
     color: #333;
     padding: 20px;
     text-align: center;
-    border-top: 1px solid #ccc;
+    border-top: 1px solid #000000;
+    border-style: double;
     margin-top: 20px;
 }
 
@@ -127,4 +128,27 @@ form input[type="submit"]{
 }
 ol, ul {
     padding-left: 20px;
+}
+.custom-footer{
+    display: flex;
+    width: 95%;
+    padding: 10px;
+    height: 300px;
+    background-color: rgb(22, 224, 224);
+    justify-content: space-between;
+    margin: auto;
+    padding: 20px,20px,20px,0px;
+    text-align: left;
+    color: ghostwhite
+}
+#row{
+    list-style-type: none;
+    background-color: #ccc;
+
+}
+.custom-footer{
+    background-image: url(https://images.unsplash.com/photo-1586952518485-11b180e92764?q=80&w=2105&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
